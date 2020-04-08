@@ -60,6 +60,7 @@ export type ShapeStyle = Partial<{
   shadowOffsetX: number;
   shadowOffsetY: number;
   cursor: string;
+  position: string;
 }>;
 
 export interface IShapeBase extends ShapeBase {
@@ -124,6 +125,9 @@ export type LabelStyle = Partial<{
   shadowBlur?: number;
   shadowOffsetX?: number;
   shadowOffsetY?: number;
+  position: string;
+  textBaseline: string;
+  offset: number;
 }>;
 
 export type Easeing =

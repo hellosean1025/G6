@@ -19,18 +19,17 @@ const DEFAULT_MODE = 'default';
 const KEYSHAPE_MODE = 'keyShape';
 const DELEGATE_MODE = 'delegate';
 const SVG = 'svg';
-const CANVAS = 'canvas';
 
 interface MiniMapConfig extends IPluginBaseConfig {
   viewportClassName?: string;
   type?: 'default' | 'keyShape' | 'delegate';
-  size: number[];
+  size?: number[];
   delegateStyle?: ShapeStyle;
   refresh?: boolean;
 }
 
 export default class MiniMap extends Base {
-  constructor(cfg: MiniMapConfig) {
+  constructor(cfg?: MiniMapConfig) {
     super(cfg);
   }
 
